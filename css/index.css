@@ -1,0 +1,23 @@
+/* ---------------------*/
+/*     Hero Section     */
+/* ---------------------*/
+
+.hero-section-div img{
+    width: 100%;
+}
+
+.hero-section-div{
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+
+.hero-section-div div {
+    position: absolute;
+    top: 50%; /* Centrado vertical */
+    left: 40%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajuste preciso */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo opcional para legibilidad */
+    padding: 10px;
+    font-size: 50px;
+}
