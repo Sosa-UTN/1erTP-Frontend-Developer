@@ -2,22 +2,24 @@
 /*     Hero Section     */
 /* ---------------------*/
 
-.hero-section-div img{
+.hero-section-div img {
     width: 100%;
 }
 
-.hero-section-div{
+.hero-section-div {
     position: relative;
-    display: inline-block;
+    display: block;
     color: white;
+    z-index: 1; /* para que no tape al nav*/
 }
 
-.hero-section-div div {
+.hero-section-div div { /*(texto de herosection)*/
     position: absolute;
-    top: 50%; /* Centrado vertical */
-    left: 40%; /* Centrado horizontal */
-    transform: translate(-50%, -50%); /* Ajuste preciso */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo opcional para legibilidad */
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0);
     padding: 10px;
-    font-size: 50px;
+    font-size: 100px;
 }
+
