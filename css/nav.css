@@ -11,7 +11,10 @@
 body {
     padding-top: 60px;
     background-color: gainsboro;
-    overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 /* ---------------------*/
@@ -23,7 +26,6 @@ nav {
     position:fixed;
     height: 60px;
     top: 0;
-    left: 0;
     background-color: black;
     z-index: 1000; /* para que todos los zindex 1 esten por debajo*/
 }

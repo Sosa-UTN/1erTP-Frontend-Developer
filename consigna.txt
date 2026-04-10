@@ -42,7 +42,9 @@ Sección 4: Contacto
 ● Incluir un formulario de contacto.
 ● El formulario debe contener al menos 6 campos tipo input: Nombre, Email, Teléfono, Comentario(text area), selector y radio o checkbox.
 ● Deben incluir las labels para cada input.
-● Incluir botón de enviar, y de reset. Consideraciones para Todas las Secciones
+● Incluir botón de enviar, y de reset. 
+
+Consideraciones para Todas las Secciones
 ● Se puede realizar una onepage, pero cada sección debe ocupar el alto de una pantalla de pc mínimo.
 ● Utilizar id’s y clases
 ● Implementar títulos, textos descriptivos.

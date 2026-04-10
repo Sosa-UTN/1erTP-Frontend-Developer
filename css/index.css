@@ -3,7 +3,7 @@
 /* ---------------------*/
 
 .hero-section-div img {
-    height: 95.5vh;
+    height: calc(100vh - 60px);
     width: 100%;
     object-fit: cover; /*para que no se deforme la imagen*/
     object-position: right;

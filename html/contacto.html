@@ -22,7 +22,51 @@
         </nav>
     </header>
     <main>
+        <div class="flex-container">
+                <form class="form-container" method="post">
 
+                    <!-- Nombre -->
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+
+                    <!-- Email -->
+                    <input type="email" id="correo" name="correo" placeholder="Email">
+
+                    <!-- Teléfono -->
+                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+
+                    <!-- Comentario (Textarea) -->
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="30"
+                        placeholder="Escribe tu comentario aquí..."></textarea>
+
+                    <!-- Selector (El "placeholder" es la primera opción) -->
+                    <select id="opciones" name="opciones">
+                        <option value="" disabled selected>Elige una opción...</option>
+                        <option value="web">Diseño Web</option>
+                        <option value="app">App Móvil</option>
+                    </select>
+
+                    <!-- Radio Buttons (Necesitan label para saber qué es cada uno) -->
+                    <div>
+                        <p>Género:</p>
+                        <div>
+                            <input type="radio" id="masc" name="genero" value="m"> <label for="masc">Masculino</label>
+                        </div>
+                        <input type="radio" id="fem" name="genero" value="f"> <label for="fem">Femenino</label>
+                    </div>
+
+                    <!-- Checkbox -->
+                    <br>
+                    <input type="checkbox" id="terminos" name="terminos">
+                    <label for="terminos">Acepto los términos</label>
+
+                    <!-- Botones de Acción -->
+                    <div>
+                        <button type="">Enviar Formulario</button>
+                        <button type="">Limpiar campos</button>
+                    </div>
+
+                </form>
+        </div>
     </main>
     <footer>
 

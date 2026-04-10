@@ -16,7 +16,7 @@
 }
 
 .foto {
-    height: 93vh;
+    height: calc(100vh - 80px);
     width: 100%;
     object-fit: cover; /*para que no se deforme la imagen*/
     object-position: center;
