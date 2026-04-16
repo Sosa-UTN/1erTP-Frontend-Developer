@@ -32,24 +32,27 @@ nav {
     top: 0;
     background-color: #3b06a1;
     z-index: 1000; /* para que todos los zindex 1 esten por debajo*/
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.5);
 }
 
 .logo { 
     display: flex;
     align-items: center;
-    text-decoration: none;
+    text-decoration: none !important;
     color: #f5de00;
 }
 
 .logo img {
     width: 65px;
     margin-bottom: 4px;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.8));
 }
 
 .logo p {
     font-size: 30px;
     margin: 0;
     font-weight: 550;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 nav ul {
@@ -63,10 +66,11 @@ nav ul {
 nav ul li {
     display: block;
     margin: 15px;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.8));
 }
 
 nav ul li a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: #f5de00;
     padding: 5px 10px;
     font-size: 20px;
