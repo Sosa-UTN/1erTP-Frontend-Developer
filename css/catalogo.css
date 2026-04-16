@@ -1,0 +1,53 @@
+.contenedor-grilla {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 2fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.contenedor-grilla > div {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.primero {
+    grid-column: 1/5;
+    grid-row: 1 /1;
+    background-color: gray;
+}
+
+.cuarto {
+    grid-column: 4 / 5;
+    grid-row: 2 / 5;
+}
+
+.card {
+    background-color: white;
+    transition: transform 0.3s ease;
+    
+}
+
+.card:hover{
+    transform: scale(1.005); /* Agranda la imagen */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Añade sombra */
+    z-index: 1; /* para que no tape al nav*/
+}
+
+.card img {
+    width: 100%;
+}
+
+.card div {
+    margin: 15px;
+}
+
+.card button {
+    background-color: blue;
+    width: 100%;
+    border-radius: 15px;
+    height: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 25px;
+    margin-top: 10px;
+}
