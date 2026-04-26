@@ -8,6 +8,7 @@
     object-fit: cover;
     /*para que no se deforme la imagen*/
     object-position: right;
+    opacity: 0.8; /* transparencia */
 }
 
 .hero-section-div {
@@ -24,18 +25,31 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0);
     padding: 10px;
     text-align: center;
     font-size: 10vw;
-    text-shadow: 3px 3px 4px #000000;
+    color: rgba(255, 255, 255, 0.955);
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8));
+}
+
+.seccion-cards {
+    display: flex;
+    height: calc(100vh - 60px);
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.seccion-cards h1 {
+    font-size: 45px;
 }
 
 .contenedor-cards {
     display: flex;
     align-items: center;
-    height: 100vh;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 .index-card {
