@@ -3,7 +3,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 65px);
 }
 
 .form-container {
@@ -13,10 +13,16 @@
     flex-direction: column;
     gap: 10px;
     width: 800px;
-    background-color: rgba(0, 0, 0, 0.543);
-    height: calc(100vh - 100px);
+    background-color: rgb(59 6 161 / 47%);
+    height: calc(100vh - 105px);
     border-radius: 30px;
     padding: 10px 50px 10px 50px;
+}
+
+.form-container h2 {
+    font-size: 30px;
+    color: #f5de00;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.8));
 }
 
 .form-container input[type="text"],
@@ -37,4 +43,58 @@
 .form-container input[type="checkbox"] {
     width: auto; /* Para que no ocupen todo el ancho */
     cursor: pointer;
+}
+
+.form-container select {
+    width: 50%;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-size: 30px;
+    color: gray;
+    padding: 0px 15px;
+}
+
+.radio-input-container {
+    width: 50%;
+    padding: 0px 15px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.radio-input-container div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+}
+
+.checkbox-container {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.buttons-container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.buttons-container button {
+    flex: 1;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+.enviar-form {
+    background-color: blue;
+}
+
+.limpiar-campos{
+    background-color: red;
 }

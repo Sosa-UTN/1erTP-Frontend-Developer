@@ -13,7 +13,9 @@
     <!-- Formulario de contacto -->
     <header>
         <nav>
-            <a href="index.html" class="logo"><img src="../img/corona-amarilla.png" alt=""><p>MERCELAND</p></a>
+            <a href="index.html" class="logo"><img src="../img/corona-amarilla.png" alt="">
+                <p>MERCELAND</p>
+            </a>
             <ul>
                 <li> <a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
                 <li><a href="catalogo.html"><i class="fa-solid fa-bag-shopping"></i> Catálogo</a></li>
@@ -24,49 +26,54 @@
     </header>
     <main>
         <div class="flex-container">
-                <form class="form-container" method="post">
+            <form class="form-container" method="post">
+                <h2>Contactanos para recibir atención personalizada</h2><br>
+                <!-- Nombre -->
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
 
-                    <!-- Nombre -->
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                <!-- Email -->
+                <input type="email" id="correo" name="correo" placeholder="Email">
 
-                    <!-- Email -->
-                    <input type="email" id="correo" name="correo" placeholder="Email">
+                <!-- Teléfono -->
+                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
 
-                    <!-- Teléfono -->
-                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+                <!-- Comentario (Textarea) -->
+                <textarea id="mensaje" name="mensaje" rows="4" cols="30"
+                    placeholder="Escribe tu comentario aquí..."></textarea>
 
-                    <!-- Comentario (Textarea) -->
-                    <textarea id="mensaje" name="mensaje" rows="4" cols="30"
-                        placeholder="Escribe tu comentario aquí..."></textarea>
+                <!-- Selector (El "placeholder" es la primera opción) -->
+                <select id="opciones" name="opciones">
+                    <option value="" disabled selected>Tipo de Compra</option>
+                    <option value="mayorista">Mayorista</option>
+                    <option value="minorista">Minorista</option>
+                </select>
 
-                    <!-- Selector (El "placeholder" es la primera opción) -->
-                    <select id="opciones" name="opciones">
-                        <option value="" disabled selected>Elige una opción...</option>
-                        <option value="web">Diseño Web</option>
-                        <option value="app">App Móvil</option>
-                    </select>
-
-                    <!-- Radio Buttons (Necesitan label para saber qué es cada uno) -->
+                <!-- Radio Buttons (Necesitan label para saber qué es cada uno) -->
+                <div class="radio-input-container">
+                    <p>¿Ya nos conocías?</p>
                     <div>
-                        <p>Género:</p>
-                        <div>
-                            <input type="radio" id="masc" name="genero" value="m"> <label for="masc">Masculino</label>
-                        </div>
-                        <input type="radio" id="fem" name="genero" value="f"> <label for="fem">Femenino</label>
+                        <input type="radio" id="si" name="respuesta" value="s">
+                        <label for="si">Sí</label>
+
+                        <input type="radio" id="no" name="respuesta" value="n">
+                        <label for="no">No</label>
                     </div>
 
-                    <!-- Checkbox -->
-                    <br>
+                </div>
+
+                <!-- Checkbox -->
+                <div class="checkbox-container">
                     <input type="checkbox" id="terminos" name="terminos">
                     <label for="terminos">Acepto los términos</label>
+                </div>
 
-                    <!-- Botones de Acción -->
-                    <div>
-                        <button type="">Enviar Formulario</button>
-                        <button type="">Limpiar campos</button>
-                    </div>
+                <!-- Botones de Acción -->
+                <div class="buttons-container">
+                    <button class="enviar-form">Enviar Formulario</button>
+                    <button class="limpiar-campos">Limpiar campos</button>
+                </div>
 
-                </form>
+            </form>
         </div>
     </main>
     <footer>
@@ -75,7 +82,7 @@
                 <h3>LOCAL</h3>
                 <p>Visitanos en nuestro local en... </p>
                 <p>No dudes en escribirnos a nuestro whatsapp para cualquier consulta.</p>
-                
+
             </div>
             <div class="footer-div">
                 <h3>HORARIOS</h3>
