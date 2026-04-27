@@ -61,4 +61,12 @@
     font-size: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+  /*entre 1024px y 768px*/
 
+}
+
+@media screen and (max-width: 768px) {
+  /*entre 768px y 360px*/
+  
+}
